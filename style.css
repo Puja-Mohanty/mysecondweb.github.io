@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(./images/header.jpg);
+    background-size: 100% 115%;
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-bottom: 1px solid lightgray;
+    padding: 6px 0px;
+}
+.logo{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav_list ul{
+    display: flex;
+}
+.nav_list ul li{
+    list-style: none;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.nav_list ul li:hover{
+    color: indianred;
+    text-decoration: underline;
+}
+.header_txt{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+}
+.header_txt h1{
+    font-size: 40px;
+}
+.hr_style{
+    width: 30px;
+    margin: 15px auto;
+    background-color: indianred;
+    border: none;
+    height: 3px;
+}
+.btn{
+    font-size: 18px;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-top: 25px;
+}
+.red_btn{
+    background-color: indianred;
+    color: #fff;
+}
+.white_btn{
+    background-color: #fff;
+    color: #000;
+}
+.color_text_section{
+    text-align: center;
+    background-color: #ff563f;
+    padding: 40px 0px;
+}
+.color_txt{
+    width: 50%;
+    margin: 0 auto;
+}
+.white_hr{
+    background-color: #fff !important;
+}
+.icon_section{
+    padding: 40px 0px;
+}
+.service_txt{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.card_group{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 22%;
+    text-align: center;
+}
+.card p{
+    text-align: left;
+    margin-top: 10px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.gallery .photo{
+    width: 33.3%;
+    height: 170px;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+.subscibe_txt{
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+}
+.last_section{
+    padding: 60px 0px;
+}
+.conatiner{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.mail h5{
+    color: red;
+}
+.humberger{
+    display: none;
+}
+/* for all big screen */
+@media all and (min-width:1280px){
+    body{
+        background-color: aqua;
+    }
+}
+/* only for ipad pro */
+@media all and (min-width:1024px) and (max-width:1279px){
+    body{
+        background-color: yellow;
+    }
+}
+/* only for tablet */
+@media all and (min-width:768px) and (max-width:1023px){
+    body{
+        background-color: pink;
+    }
+}
+/* responsive for all mobile device */
+@media all and (max-width:767px){
+    .nav_list ul{
+        display: none;
+    }
+    .humberger{
+        display: block;
+        margin-right: 15px;
+    }
+    .humberger i{
+        color: #ff563f;
+    }
+    .header_txt,.color_txt,.conatiner{
+        width: 80%;
+    }
+    .card_group,.gallery,.contact{
+        flex-direction: column;
+    }
+    .card_group>.card,.gallery>.photo{
+        width: 100%;
+    }
+    .card p{
+        text-align: center;
+    }
+    .gallery>.photo{
+        height: 200px;
+    }
+}
